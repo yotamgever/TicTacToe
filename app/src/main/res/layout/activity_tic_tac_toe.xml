@@ -7,12 +7,13 @@
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="370dp"
     android:layout_height="370dp"
-    android:background="@drawable/back">
+    android:background="@drawable/back"
+        android:id="@+id/tableLayout">
     <TableRow>
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="110dp"
-            android:id="@+id/cell_11"
+            android:id="@+id/cell_00"
             android:layout_alignParentTop="false"
             android:layout_alignParentLeft="false"
             android:layout_marginLeft="5dp"
@@ -21,7 +22,7 @@
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="110dp"
-            android:id="@+id/cell_12"
+            android:id="@+id/cell_01"
             android:layout_alignParentTop="false"
             android:layout_alignParentLeft="false"
             android:layout_marginLeft="5dp"
@@ -30,7 +31,7 @@
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="110dp"
-            android:id="@+id/cell_13"
+            android:id="@+id/cell_02"
             android:layout_alignParentTop="false"
             android:layout_alignParentLeft="false"
             android:layout_marginLeft="0dp"
@@ -38,6 +39,44 @@
             android:background="#00ffffff" />
     </TableRow>
         <TableRow>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:id="@+id/cell_10"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="14dp"
+                android:background="#00ffffff" />
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:id="@+id/cell_11"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:background="#00ffffff" />
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:id="@+id/cell_12"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:background="#00ffffff" />
+        </TableRow>
+        <TableRow>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:id="@+id/cell_20"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:background="#00ffffff" />
             <ImageButton
                 android:layout_width="100dp"
                 android:layout_height="110dp"
@@ -53,48 +92,26 @@
                 android:id="@+id/cell_22"
                 android:layout_alignParentTop="false"
                 android:layout_alignParentLeft="false"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="14dp"
-                android:background="#00ffffff" />
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="110dp"
-                android:id="@+id/cell_23"
-                android:layout_alignParentTop="false"
-                android:layout_alignParentLeft="false"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="14dp"
-                android:background="#00ffffff" />
-        </TableRow>
-        <TableRow>
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="110dp"
-                android:id="@+id/cell_31"
-                android:layout_alignParentTop="false"
-                android:layout_alignParentLeft="false"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="14dp"
-                android:background="#00ffffff" />
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="110dp"
-                android:id="@+id/cell_32"
-                android:layout_alignParentTop="false"
-                android:layout_alignParentLeft="false"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="14dp"
-                android:background="#00ffffff" />
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="110dp"
-                android:id="@+id/cell_33"
-                android:layout_alignParentTop="false"
-                android:layout_alignParentLeft="false"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="14dp"
                 android:background="#00ffffff" />
         </TableRow>
     </TableLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/xplay" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:id="@+id/new_game"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

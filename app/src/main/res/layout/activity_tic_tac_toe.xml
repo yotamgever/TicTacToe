@@ -104,14 +104,17 @@
         android:id="@+id/imageView"
         android:layout_below="@+id/tableLayout"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/xplay" />
+        android:layout_marginTop="-3dp"
+        android:src="@drawable/xplay"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Game"
         android:id="@+id/new_game"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-8dp"
+        android:layout_alignParentTop="false"/>
 
 </RelativeLayout>
